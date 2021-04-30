@@ -13,6 +13,7 @@ header{
     left: 0px;
     background-color: black;
     color: white;
+    z-index: 5;
 }
 .header{
     display: flex;
@@ -128,11 +129,26 @@ header{
 @media only screen and (max-width: 900px) {
     .welcome-content-box-div{
         width: 85%;
+        height: auto;
     }
 }
 @media only screen and (max-width: 600px) {
     .header{
         padding: 10px 10px;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .header{
+        padding: 10px 10px;
+        gap: 10px;
+    }
+    .welcome-content-box-div{
+        width: 85%;
+        height: auto;
+    }
+    .header-logo-clg-name h1{
+        font-size:2.7vh;
+        letter-spacing: 1px;
     }
 }
 @media only screen and (max-width: 420px) {
@@ -166,5 +182,99 @@ header{
         font-weight: 500;
         margin: 15px 0px;
         letter-spacing: 1px;
+    }
+}
+ 
+/* Meme COntent Page */
+
+.meme-content-section{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 2%;
+}
+.meme-content-section-div{
+    position: absolute;
+    top: 120px;
+    padding: 10px 15px;
+}
+.meme-content-section-all-memes{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 50px;
+}
+.meme-content-section-single-meme{
+    display: grid;
+    grid-template-rows: 85% 15%;
+    height: 300px;
+    width: 250px;
+    overflow: hidden;
+    padding: 5px;
+    background-color: white;
+    border-radius: 7px;
+}
+.meme-content-section-meme-image{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.meme-content-section-meme-like-and-username{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+}
+.meme-like-btn{
+    height: 25px;
+    width: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: white;
+    background-image: url('content/heart.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.meme-content-section-meme-creator-name p{
+    margin: 5px 0px;
+    font-size: 16px;
+    font-family: 'PT Serif', serif;
+    font-style: 500;
+    color: black;
+}
+@media only screen and (max-width: 1000px) {
+    .meme-content-section{
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 2%;
+    }
+    .meme-content-section-div{
+        position: absolute;
+        top: 100px;
+        padding: 10px 15px;
+    }
+    .meme-content-section-all-memes{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 50px;
+    }
+}
+@media only screen and (max-width: 650px) {
+    .meme-content-section-all-memes{
+        display: grid;
+        grid-template-columns: auto;
+        gap: 50px;
+        padding-bottom: 30px;
+    }
+    .meme-content-section-div{
+        position: absolute;
+        top: 100px;
+        padding: 10px 15px;
     }
 }
