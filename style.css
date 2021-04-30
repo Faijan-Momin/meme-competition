@@ -142,6 +142,7 @@ header{
     }
     .welcome-content-box-div{
         width: 85%;
+        height: auto;
     }
     .header-logo-clg-name h1{
         font-size:2.5vh;
