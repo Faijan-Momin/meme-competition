@@ -1,0 +1,169 @@
+html{
+    margin: 0px;
+    pad: 0px;
+}
+body{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+header{
+    height: auto;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: black;
+    color: white;
+}
+.header{
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+}
+.header-logo-one img{
+    height: 50px;
+    width: 50px;
+}
+.header-logo-two img{
+    height: 50px;
+    width: 60px;
+}
+.header-logo-clg-name h1{
+    margin: 10px 0px;
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-family: 'Open Sans', sans-serif;
+}
+/* Section User Inpt */
+.welcome-content-box{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.welcome-content-box-div{
+    color: white;
+    border: 2px solid gray;
+    border-radius: 14px;
+    height: 50%;
+    width: 50%;
+    text-align: center;
+    padding: 15px;
+    background-color: rgb(250, 192, 192);
+    background:linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 1200% 1200%;
+    animation: Gradient 15s ease infinite;      
+    }
+    @keyframes Gradient {
+        0%{
+            background-position: 0% 50%;
+        }
+        50%{
+            background-position: 100% 50%;
+        }
+        100%{
+            background-position: 0% 50%;
+        }
+    }
+
+.welcome-content-box-title h2{
+    color: white;
+    font-size: 38px;
+    font-family: 'PT Serif', serif;
+    font-weight: 600;
+    margin: 15px 0px;
+    letter-spacing: 1px;
+}
+.welcome-content-box-organised-by{
+    color: white;
+    font-size: 20px;
+    font-family: 'PT Serif', serif;
+    font-weight: 500;
+    margin: 15px 0px;
+    letter-spacing: 1px;
+}
+.welcome-content-box-user-name-input {
+    padding: 15px 0px;
+}
+.welcome-content-box-user-name-input input[type=text]{
+    height: 40px;
+    width: 250px;
+    background-color: white;
+    color: black;
+    border: 1px solid gray;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 5px 9px;
+    margin: 0px 0px 15px 0px;
+}
+.welcome-content-box-user-name-input input[type=submit]{
+    height: 40px;
+    width: 140px;
+    background-color: white;
+    border: 2px solid gray;
+    border-radius: 25px;
+    cursor: pointer;
+    margin: 10px 0px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+}
+.welcome-content-box-user-name-input input[type=submit]:hover{
+    transition: 300ms ease-in-out;
+    transform: scale(0.93);
+    background-color: transparent;
+    cursor: pointer;
+    border: 2px solid white;
+    color: white;
+}
+
+@media only screen and (max-width: 1100px) {
+    .welcome-content-box-div{
+        width: 60%;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .welcome-content-box-div{
+        width: 85%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .header{
+        padding: 10px 10px;
+    }
+}
+@media only screen and (max-width: 420px) {
+    .header{
+        padding: 10px 10px;
+        gap: 10px;
+    }
+    .welcome-content-box-div{
+        width: 85%;
+    }
+    .header-logo-clg-name h1{
+        font-size:2.5vh;
+        letter-spacing: 1px;
+    }
+    .header-logo-one img{
+        height: 30px;
+        width: 30px;
+    }
+    .header-logo-two img{
+        height: 40px;
+        width: 45px;
+    }
+    .welcome-content-box-title h2{
+        font-size: 26px;
+        margin: 15px 0px;
+    }
+    .welcome-content-box-organised-by{
+        color: white;
+        font-size: 16px;
+        font-weight: 500;
+        margin: 15px 0px;
+        letter-spacing: 1px;
+    }
+}
