@@ -87,19 +87,7 @@ header{
 .welcome-content-box-user-name-input {
     padding: 15px 0px;
 }
-.welcome-content-box-user-name-input input[type=text]{
-    height: 40px;
-    width: 250px;
-    background-color: white;
-    color: black;
-    border: 1px solid gray;
-    border-radius: 5px;
-    outline: none;
-    font-size: 16px;
-    font-family: 'Open Sans', sans-serif;
-    padding: 5px 9px;
-    margin: 0px 0px 15px 0px;
-}
+/* 
 .welcome-content-box-user-name-input input[type=submit]{
     height: 40px;
     width: 140px;
@@ -119,6 +107,44 @@ header{
     cursor: pointer;
     border: 2px solid white;
     color: white;
+} */
+.login-with-google-btn {
+    transition: background-color 0.3s, box-shadow 0.3s;
+    padding: 12px 16px 12px 42px;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.04), 0 1px 1px rgba(0, 0, 0, 0.25);
+    color: #757575;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBkPSJNMTcuNiA5LjJsLS4xLTEuOEg5djMuNGg0LjhDMTMuNiAxMiAxMyAxMyAxMiAxMy42djIuMmgzYTguOCA4LjggMCAwIDAgMi42LTYuNnoiIGZpbGw9IiM0Mjg1RjQiIGZpbGwtcnVsZT0ibm9uemVybyIvPjxwYXRoIGQ9Ik05IDE4YzIuNCAwIDQuNS0uOCA2LTIuMmwtMy0yLjJhNS40IDUuNCAwIDAgMS04LTIuOUgxVjEzYTkgOSAwIDAgMCA4IDV6IiBmaWxsPSIjMzRBODUzIiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48cGF0aCBkPSJNNCAxMC43YTUuNCA1LjQgMCAwIDEgMC0zLjRWNUgxYTkgOSAwIDAgMCAwIDhsMy0yLjN6IiBmaWxsPSIjRkJCQzA1IiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48cGF0aCBkPSJNOSAzLjZjMS4zIDAgMi41LjQgMy40IDEuM0wxNSAyLjNBOSA5IDAgMCAwIDEgNWwzIDIuNGE1LjQgNS40IDAgMCAxIDUtMy43eiIgZmlsbD0iI0VBNDMzNSIgZmlsbC1ydWxlPSJub256ZXJvIi8+PHBhdGggZD0iTTAgMGgxOHYxOEgweiIvPjwvZz48L3N2Zz4=);
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: 12px 11px;
+    cursor: pointer;
+  }
+  .login-with-google-btn:hover {
+    box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.04), 0 2px 4px rgba(0, 0, 0, 0.25);
+    transition: 300ms ease-in-out;
+    transform: scale(0.93);
+  }
+  .login-with-google-btn:active {
+    background-color: #eeeeee;
+  }
+  .login-with-google-btn:focus {
+    outline: none;
+    box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.04), 0 2px 4px rgba(0, 0, 0, 0.25), 0 0 0 3px #c8dafc;
+  }
+  .welcome-content-box-mesg{
+      padding-top: 10px;
+  }
+  .welcome-content-box-mesg p{
+    font-size: 14px;
+    color: white;
+    font-family: 'PT Serif', serif;
+    font-weight: 600;
+    letter-spacing: 0.9px;
 }
 
 @media only screen and (max-width: 1100px) {
@@ -183,6 +209,11 @@ header{
         margin: 15px 0px;
         letter-spacing: 1px;
     }
+    .welcome-content-box-mesg p{
+        font-size: 13px;
+    }
+ 
+    
 }
  
 /* Meme COntent Page */
@@ -204,6 +235,7 @@ header{
     display: grid;
     grid-template-columns: auto auto auto;
     gap: 50px;
+    padding-bottom: 100px;
 }
 .meme-content-section-single-meme{
     display: grid;
@@ -226,6 +258,7 @@ header{
     align-items: center;
     padding: 0px 10px;
 }
+
 .meme-like-btn{
     height: 25px;
     width: 40px;
@@ -238,6 +271,18 @@ header{
     background-repeat: no-repeat;
     background-size: contain;
 }
+.meme-like-btn-liked{
+    height: 25px;
+    width: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: white;
+    background-image: url('content/heart-red.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
 .meme-content-section-meme-creator-name p{
     margin: 5px 0px;
     font-size: 16px;
@@ -245,6 +290,48 @@ header{
     font-style: 500;
     color: black;
 }
+
+.meme-like-submit-form{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.meme-like-submit-form form{
+    margin-bottom: 0px;
+}
+.meme-input-submit-btn{
+    height: 40px;
+    width: 140px;
+    background-color: white;
+    border: 2px solid gray;
+    border-radius: 25px;
+    cursor: pointer;
+    margin: 10px 0px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+}
+.meme-input-submit-btn:hover{
+    transition: 300ms ease-in-out;
+    transform: scale(0.96);
+    cursor: pointer;
+    border: 2px solid white;
+    color: white;
+    background-color: rgb(250, 192, 192);
+    background:linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 1000% 1000%;
+    animation: buttonAnimation 10s ease infinite; 
+}
+
 @media only screen and (max-width: 1000px) {
     .meme-content-section{
         display: flex;
@@ -270,11 +357,127 @@ header{
         display: grid;
         grid-template-columns: auto;
         gap: 50px;
-        padding-bottom: 30px;
+        padding-bottom: 90px;
     }
     .meme-content-section-div{
         position: absolute;
         top: 100px;
         padding: 10px 15px;
     }
+    .meme-like-submit-form{
+        padding-top: 0px;
+        padding-bottom: 0px;
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+    }
+    .meme-like-submit-form form{
+        margin-bottom: 0px;
+    }
 }
+/* Admin Panel */
+.admin-panel-upload-meme-section{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.admin-panel-upload-meme-section-div{
+    height: 50%;
+    width: 50%;
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid gray;
+    border-radius: 14px;
+    box-shadow: rgba(255, 255, 255, 0.671) 0px 2px 12px -5px;
+}
+.admin-panel-upload-meme-form{
+    padding: 10px;
+    display: grid;
+    grid-template-rows: 50px 50px 50px;
+    gap: 25px;
+}
+.admin-panel-upload-meme-form-upload-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.admin-panel-upload-meme-form-upload-image input{
+    font-size: 16px;
+    color: black;
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+}
+.admin-panel-upload-meme-form-upload-image input::-webkit-file-upload-button{
+    height: 40px;
+    width: 120px;
+    font-size: 16px;
+    color: black;
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+.admin-panel-upload-meme-form-creator-name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.admin-panel-upload-meme-form-creator-name input{
+    height: 40px;
+    width: 100%;
+    border: 1px solid gray;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 500;
+    padding: 3px 6px;
+}
+.admin-panel-upload-meme-form-submit-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.admin-panel-upload-meme-form-submit-btn input[type=submit]{
+    height: 40px;
+    width: 140px;
+    background-color: white;
+    border: 2px solid gray;
+    border-radius: 25px;
+    cursor: pointer;
+    margin: 10px 0px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+}
+.admin-panel-upload-meme-form-submit-btn input[type=submit]:hover{
+    transition: 300ms ease-in-out;
+    transform: scale(0.96);
+    cursor: pointer;
+    border: 2px solid white;
+    color: white;
+    background-color: rgb(250, 192, 192);
+    background:linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 1000% 1000%;
+    animation: buttonAnimation 10s ease infinite;      
+}
+    @keyframes buttonAnimation {
+        0%{
+            background-position: 0% 50%;
+        }
+        50%{
+            background-position: 100% 50%;
+        }
+        100%{
+            background-position: 0% 50%;
+        }
+    }

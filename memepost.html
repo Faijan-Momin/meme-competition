@@ -33,7 +33,7 @@
                     </div>
                     <div class="meme-content-section-meme-like-and-username">
                         <div class="meme-content-section-meme-like-btn">
-                            <button class="meme-like-btn" onclick="changeLike();"></button>
+                            <button class="meme-like-btn" onclick="changeLike(this);"></button>
                         </div>
                         <div class="meme-content-section-meme-creator-name">
                             <p>~ Faijan Momin</p>
@@ -47,7 +47,7 @@
                     </div>
                     <div class="meme-content-section-meme-like-and-username">
                         <div class="meme-content-section-meme-like-btn">
-                            <button class="meme-like-btn" onclick="changeLike();"></button>
+                            <button class="meme-like-btn" onclick="changeLike(this);"></button>
                         </div>
                         <div class="meme-content-section-meme-creator-name">
                             <p>~ Faijan Momin</p>
@@ -61,7 +61,7 @@
                     </div>
                     <div class="meme-content-section-meme-like-and-username">
                         <div class="meme-content-section-meme-like-btn">
-                            <button class="meme-like-btn" onclick="changeLike();"></button>
+                            <button class="meme-like-btn" onclick="changeLike(this);"></button>
                         </div>
                         <div class="meme-content-section-meme-creator-name">
                             <p>~ Faijan Momin</p>
@@ -75,7 +75,7 @@
                     </div>
                     <div class="meme-content-section-meme-like-and-username">
                         <div class="meme-content-section-meme-like-btn">
-                            <button class="meme-like-btn" onclick="changeLike();"></button>
+                            <button class="meme-like-btn" onclick="changeLike(this);"></button>
                         </div>
                         <div class="meme-content-section-meme-creator-name">
                             <p>~ Faijan Momin</p>
@@ -89,7 +89,7 @@
                     </div>
                     <div class="meme-content-section-meme-like-and-username">
                         <div class="meme-content-section-meme-like-btn">
-                            <button class="meme-like-btn" onclick="changeLike();"></button>
+                            <button class="meme-like-btn"></button>
                         </div>
                         <div class="meme-content-section-meme-creator-name">
                             <p>~ Faijan Momin</p>
@@ -103,7 +103,7 @@
                     </div>
                     <div class="meme-content-section-meme-like-and-username">
                         <div class="meme-content-section-meme-like-btn">
-                            <button class="meme-like-btn" onclick="changeLike();"></button>
+                            <button class="meme-like-btn"></button>
                         </div>
                         <div class="meme-content-section-meme-creator-name">
                             <p>~ Faijan Momin</p>
@@ -111,7 +111,20 @@
                     </div>
                 </div>
             </div>
+            <div class="meme-like-submit-form">
+                <form action="" method="post" >
+                    <input type="submit" value="Submit View" class="meme-input-submit-btn">
+                </form>
+            </div>
         </div>
     </section>
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script>
+        $(".meme-like-btn").click(function () {
+            $(".meme-like-btn").removeClass("meme-like-btn-liked");
+            $(this).addClass("meme-like-btn-liked");        
+        });
+    </script>
 </body>
 </html>
